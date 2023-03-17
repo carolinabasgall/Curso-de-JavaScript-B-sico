@@ -1,0 +1,24 @@
+
+class Estudiante {
+    nombre;
+    listaAsignatura = ["Javascript", "HTML", "CSS"];
+    constructor(nombre, listaAsignatura) {
+        this.nombre = nombre
+        this.listaAsignatura = ["Javascript", "HTML", "CSS"]
+    }
+    obtenDatos() { 
+        console.log(`${this.nombre} ${this.listaAsignatura}`)
+    }
+}
+const nuevoEst = new Estudiante("Bruno")
+console.log(nuevoEst)
+
+
+class Datos extends Estudiante{
+    obtenDatos() { 
+        console.log(`${this.nombre} ${this.listaAsignatura}`)
+    }
+    }
+const nuevodev = new Datos ("Juana")
+console.log(nuevodev)
+
